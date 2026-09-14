@@ -1,8 +1,22 @@
+import { Link } from "react-router-dom";
+import "../styles/Footer.scss";
 
 function Footer() {
   return (
     <footer className="footer">
-      <p>© 2026 - Tous droits réservés</p>
+      <div className="footer-content">
+
+        <p>
+          © {new Date().getFullYear()} Chenipops
+        </p>
+
+        <div className="footer-links">
+          <Link to="/contact">Contact</Link>
+          <span>✿</span>
+          <Link to="/services">Nos créations</Link>
+        </div>
+
+      </div>
     </footer>
   );
 }
