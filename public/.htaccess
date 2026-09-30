@@ -1,0 +1,8 @@
+RewriteEngine On
+
+# Si le fichier ou dossier existe réellement, on le laisse passer
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Sinon React Router prend le relais
+RewriteRule ^ index.html [L]
