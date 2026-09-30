@@ -1,5 +1,6 @@
 import { useForm, ValidationError } from "@formspree/react";
 import "../styles/Contact.scss";
+import SEO from "../components/SEO.jsx";
 
 function Contact() {
   const [state, handleSubmit] = useForm("moeqgvnp");
@@ -7,6 +8,10 @@ function Contact() {
   if (state.succeeded) {
     return (
       <main className="contact-page">
+        <SEO
+  title="Contact | Les Chenipops"
+  description="Contactez Les Chenipops pour obtenir des informations ou échanger autour d'une création personnalisée en fil chenille."
+/>
         <div className="contact-success">
           <span>♡</span>
           <h1>Merci pour votre message !</h1>

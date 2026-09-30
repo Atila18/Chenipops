@@ -1,9 +1,14 @@
 import "../styles/About.scss";
 import deco from "../assets/Déco.png";
+import SEO from "../components/SEO.jsx";
 
 function About() {
   return (
     <main className="about">
+      <SEO
+  title="À propos | Les Chenipops"
+  description="Découvrez l'univers des Chenipops et l'histoire derrière ces créations artisanales réalisées à la main en fil chenille."
+/>
       <section className="about-content">
         <div className="about-text">
           <h1>Qui sommes-nous ?</h1>

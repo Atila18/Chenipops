@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.scss";
 
+import SEO from "../components/SEO.jsx";
 import image2 from "../assets/Chat.png";
 import image3 from "../assets/Bague.png";
 import image4 from "../assets/Bat.jpg";
@@ -29,6 +30,10 @@ function Home() {
 
   return (
     <main className="home">
+      <SEO
+        title="Les Chenipops | Créations artisanales en fil chenille"
+        description="Découvrez Les Chenipops, des créations artisanales originales et personnalisées réalisées à la main en fil chenille."
+      />
       {/* CARROUSEL */}
       <section className="home-carousel">
         <div className="carousel-wrapper">
