@@ -15,6 +15,11 @@ import Citrouille from "../assets/Citrouille.png";
 import Bat from "../assets/Bat.jpg";
 import Fantôme from "../assets/Fantôme.png";
 import Ange from "../assets/Ange.png";
+import Escargot from "../assets/Escargot.png";
+import Herisson from "../assets/Herisson.png";
+import Magnets from "../assets/Magnets.png";
+import Renne from "../assets/Renne.png";
+import Lampe from "../assets/Lampe.png";
 
 function Services() {
 
@@ -89,14 +94,20 @@ const services = [
     title: "Lampes & luminaires",
     description:
       "Des pièces chaleureuses qui jouent avec la lumière et les textures pour créer une ambiance douce et feutrée.",
-    images: [],
+    images: [
+      Lampe,
+    ],
   },
   {
     icon: "🌼",
     title: "Magnets & porte-clés",
     description:
       "De petits accessoires du quotidien pleins de peps pour emporter une touche de fantaisie partout avec soi.",
-    images: [],
+    images: [
+      Escargot,
+      Herisson,
+      Magnets,
+    ],
   },
   {
     icon: "✨",
@@ -118,6 +129,7 @@ const services = [
       Bat,
       Fantôme,
       Ange,
+      Renne,
     ],
   },
 ];;
